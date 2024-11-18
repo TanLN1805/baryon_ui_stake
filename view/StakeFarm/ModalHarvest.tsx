@@ -1,17 +1,31 @@
 import { Button, TokenImg } from '@ne/uikit-dex';
 import { useTranslations } from 'next-intl';
 import TokenPrice from '@/components/common/TokenPrice';
+import { convertBalanceToWei, thuhoach} from '.';
+import { useState } from 'react';
+
 
 const ModalHarvest = ({
   poolInfo,
   onCancel,
-  onConfirm,
+  // onConfirm,
+  
+  data,
 }: {
   poolInfo?: any;
   onCancel?: () => void;
-  onConfirm?: () => void;
+  // onConfirm?: () => void;
+  data:any;
 }) => {
   const t = useTranslations();
+  console.log('ngu',data.id);
+  
+
+  const onConfirm =()=>{
+   
+   thuhoach(data.id,data.address)
+  }
+
 
   return (
     <div>
@@ -22,7 +36,8 @@ const ModalHarvest = ({
             alt="Review" 
             className='object-contain rounded-[50%] mb-4'
           />
-          <h2 className="text-xl font-semibold">{t('Harvest')}</h2>
+          {/* <h2 className="text-xl font-semibold">{t('Harvest')}</h2> */}
+          <h2 className="text-xl font-semibold">Harvest</h2>
         </div>
         <div className="flex justify-between">
           <div className="flex items-center gap-2">

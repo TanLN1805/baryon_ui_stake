@@ -3111,6 +3111,11 @@ bech32@^2.0.0:
   resolved "https://registry.yarnpkg.com/bech32/-/bech32-2.0.0.tgz#078d3686535075c8c79709f054b1b226a133b355"
   integrity sha512-LcknSilhIGatDAsY1ak2I8VtGaHNhgMSYVxFrGLXv+xLHytaKZKcaUJJUE7qmBr7h33o5YQwP55pMI0xmkpJwg==
 
+bigdecimal@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/bigdecimal/-/bigdecimal-0.6.1.tgz#18588d4b4f226b77310ed04574858c036a54485b"
+  integrity sha512-pFxbEwaZRK6XifePcw22DxJkCzCMw3YAossM884Tkvh9QpdWzFBLkgdnjx29yEickWBVYv1F9DdaDxDaF3dzkw==
+
 bigint-buffer@^1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/bigint-buffer/-/bigint-buffer-1.1.5.tgz#d038f31c8e4534c1f8d0015209bf34b4fa6dd442"
